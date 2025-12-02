@@ -2,126 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Bunny!</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyles.css" />
   </head>
+
   <body>
-    <!-- ▼全体の囲み▼ -->
-    <div id="wrapper">
-      <!-- メニューを開くボタン&前に戻るボタン -->
-      <div id="open"><span id="open-icon"></span></div>
-      <div id="back"><a href="javascript:history.back();"></a></div>
+    <script>
+      NekoType = "moka";
+    </script>
+    <h1 id="nl">
+      <script src="https://webneko.net/n20171213.js"></script>
+      <a href="https://webneko.net">Neko</a>
+    </h1>
+    <div class="wrapper">
+      <img
+        src="images\Monitor Spritefill.svg"
+        alt="Monitor"
+        style="width: 60%"
+      />
 
-      <!-- ▼ヘッダ▼ -->
-      <header>
-        <h1><a href="index.html">Marisol's Site</a></h1>
-      </header>
-      <!-- ▲ヘッダ▲ -->
-      <script>
-        NekoType = "black";
-      </script>
-      <h1 id="nl">
-        <script src="https://webneko.net/n20171213.js"></script>
-        <a href="https://webneko.net">Neko</a>
-      </h1>
-      <!-- ▼メイン▼ -->
-      <div id="contents" class="cf">
-        <!-- ▼右側▼ -->
-        <div id="rightcolumn">
-          <div id="rightcolumn-inner">
-            <article>
-              <!-- ここから文字 -->
-              <h2><span>Happy Birthday My Love!!!</span></h2>
-              You mean the world to me and I hope you have the best birthday
-              ever!!<br />
-              I love you so much Bunny <3 <br />
-              I wanted to make you something special for your birthday,
-              something you can always look back to.
+      <div class="centered">
+        <h1>Login</h1>
+        <script src="index.js"></script>
 
-              <h2><span>13.12.2006</span></h2>
-              After making the
-              <a href="login.html" target="_blank">「Login」</a> page I decided
-              to find a cute website template to house all of the stuff I wanted
-              to keep on a webpage for you.<br />
+        <label for="fname">
+          <img
+            class="fit-picture"
+            src="images/bubu phone.jpg"
+            alt="bubu holding phone"
+          />
+        </label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter your name"
+          required
+        />
 
-              So this will be home to all the things I want to share with you,
-              and a bunch of memories and more! <br />
-              Unfortunately we can't constantly refer to the same notebook when
-              we are apart, but we can with this site :3 <br />
-              Or at least I can share things with you here and you can look at
-              it whenever you want <3
-              <br />
-              <br />
-              <h3>Update Log</h3>
+        <br />
 
-              <dl>
-                <dt>09.10.25</dt>
-                <dd>Began Project</dd>
-                <dt>10.09.25</dt>
-                <dd>Found website template I thought you'd like</dd>
-                <dt>10.28.25</dt>
-                <dd>Created bunny avatar, added gallery page</dd>
-                <dt>11.17.25</dt>
-                <dd>Added Entry 1 Page :3</dd>
-                <dt>11.20.25</dt>
-                <dd>Added "Our Time" page</dd>
-              </dl>
+        <label for="Password">
+          <img
+            class="fit-picture"
+            src="images/dudu phone.jpg"
+            alt="dudu holding phone"
+          />
+        </label>
+        <input
+          type="password"
+          id="Password"
+          name="Password"
+          placeholder="Password"
+        />
 
-              <!-- ここまで文字 -->
-            </article>
-          </div>
-        </div>
-        <!-- ▲右側▲ -->
+        <br />
 
-        <!-- ▼左側▼ -->
-        <div id="side-bg"></div>
-        <div id="leftcolumn">
-          <div id="leftcolumn-inner">
-            <!-- ▼メニュー▼ -->
-            <div id="menu">
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="login.html">Back to Login</a></li>
-                  <li><a href="ourtime.html">Our Time</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-
-                  <li>
-                    <span>Note Entries</span>
-                    <ul class="sub-menu">
-                      <li><a href="entry1.html">Divine Reaction</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <!-- ▲メニュー▲ -->
-
-            <!-- <aside>
-              <br /><br />
-              <a href="#">link</a><br />
-              <a href="#">link</a><br />
-              <a href="#">link</a><br />
-            </aside> -->
-          </div>
-        </div>
+        <button type="submit" onClick="auth()">Submit</button>
       </div>
-
-      <footer>
-        <div id="fl">
-          <a href="http://foollovers.com" target="_blank">designed</a>
-        </div>
-      </footer>
     </div>
-
-    <a href="#" id="pagetop"><span class="arrow"></span></a>
-
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/jquery.height.js"></script>
-    <script src="js/jquery.scroll.js"></script>
-    <script src="js/jquery.toggle.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@ function auth() {
   var password = document.getElementById("Password").value;
 
   if (name === "Marisol" && password === "022625") {
-    window.location.replace("index.html");
+    window.location.replace("mainpage.html");
   } else {
     alert("Invalid Information");
     return;
