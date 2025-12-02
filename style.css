@@ -1,0 +1,661 @@
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+p,
+pre,
+del,
+em,
+img,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table,
+tbody,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+a img {
+  border-style: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+@font-face {
+  font-family: "Cherish";
+  src: url(Cherish.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "heartfont";
+  src: url(heartfont.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 70%;
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background: #fff;
+  color: #cb87a9;
+  font-size: 1.7em;
+  font-family: "heartfont", "Dosis", "Segoe UI", "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック体", YuGothic, "Hiragino Kaku Gothic ProN",
+    "メイリオ", Meiryo, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding-left: 250px;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+aside a {
+  color: #efb1d0;
+}
+
+#rightcolumn a:not(.bg-none) {
+  background: #efb1d0;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+}
+#rightcolumn a:not(.bg-none):hover {
+  background: #bb877c;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#wrapper {
+  position: relative;
+  text-align: left;
+  min-height: 100%;
+}
+header {
+  background: url(image/back01.gif) repeat-x 0 100%;
+  padding: 10px 20px;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  left: 0;
+  min-height: 110px;
+  width: 100%;
+  z-index: 20;
+}
+#contents {
+  background: #fff;
+  color: #474747;
+  width: 100%;
+}
+#leftcolumn {
+  background: url(image/back03.gif) repeat-y 100% 0;
+  float: left;
+  position: fixed;
+  height: 100%;
+  width: 250px; /* (※1) */
+  left: 0;
+  z-index: 10;
+}
+#leftcolumn-inner {
+  margin: 0 10px 0 0;
+  padding: 20px;
+  height: 99%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+aside {
+  padding: 20px 0;
+}
+#rightcolumn {
+  float: right;
+  width: 100%;
+}
+#rightcolumn-inner {
+  padding: 20px;
+}
+footer {
+  background: url(image/back02.gif) repeat-x;
+  padding: 30px 20px 20px;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  min-height: 75px;
+  width: 100%;
+  z-index: 10;
+}
+header,
+footer {
+  text-shadow: 1px 0 0 #201414, 1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff,
+    -1px 0 0 #fff, -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff;
+}
+/*  index
+------------------------------ */
+#index {
+  background: #fff url(image/back01.gif) repeat-x;
+  margin: 140px 20px 20px;
+  padding: 0;
+  height: auto;
+}
+
+/* ===================================
+メニュー
+=================================== */
+body#time {
+  min-height: 100vh;
+  background-image: url();
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0;
+  font-family: "Cherish";
+  color: #2b2b2b;
+  font-size: 10em;
+}
+
+#menu {
+  background: #fff;
+  font-family: "Cherish";
+  display: block;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0 0 20px;
+  text-align: center;
+  cursor: pointer;
+}
+nav li a:hover,
+nav li span:hover {
+  background: #fae2ee;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+nav li a,
+nav li span {
+  border-radius: 0;
+  color: #474747; /* メニューの文字色 */
+  display: block;
+  margin: 0;
+  padding: 5px 0; /* 一列の高さはここで調節 */
+  position: relative;
+}
+.sub-menu {
+  display: none;
+  overflow: hidden;
+}
+/*  メニューの「>」
+------------------------------ */
+nav li span:after {
+  border-top: 2px solid #999; /* 色 */
+  border-right: 2px solid #999; /* 色 */
+  content: "";
+  display: block;
+  margin-top: -5px;
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  top: 50%;
+  right: 10px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+nav li span.open:after {
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+/*  メニューを開くボタン非表示
+------------------------------ */
+#open {
+  display: none;
+}
+
+/* ===================================
+ページ上部へのリンク、前に戻るボタン、著作権表示
+=================================== */
+
+/*  ページ上部へのリンク
+------------------------------ */
+#pagetop {
+  background: rgba(239, 177, 208, 0.4);
+  border-radius: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  z-index: 50;
+}
+.arrow {
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  height: 14px;
+  width: 14px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 60;
+}
+/*  前に戻るボタン
+------------------------------ */
+#back {
+  background: #efb1d0;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  height: 40px;
+  width: 40px; /* 大きさ */
+  top: 10px;
+  right: 60px; /* 位置 */
+  display: none;
+}
+#back a {
+  display: block;
+  height: 100%;
+  line-height: 20px;
+}
+#back a:after {
+  content: "\21E6";
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  width: 36px;
+  line-height: 36px;
+}
+/*  著作権表示
+------------------------------ */
+#fl a {
+  background: rgba(239, 177, 208, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+  text-shadow: none;
+}
+
+/* ===================================
+見出し、枠、線
+=================================== */
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 0.5em;
+}
+h2 {
+  font-family: "Cherish";
+  font-size: 2em;
+  position: relative;
+  margin: 20px 0;
+}
+h2 span {
+  background: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+h2 span:first-letter {
+  color: #efb1d0;
+}
+h2::before {
+  font-family: Cherish;
+  background-color: #999;
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  z-index: 1;
+  content: "";
+}
+h3 {
+  border-bottom: 1px dashed;
+  margin: 15px 0;
+}
+dt {
+  background: url(image/i01.gif) no-repeat 0 50%;
+  clear: both;
+  font-weight: 700;
+  float: left;
+  margin: 0 0 5px;
+  padding-left: 12px;
+  width: 10em;
+}
+dd {
+  border-bottom: 1px solid;
+  margin: 0 0 5px 12em;
+}
+#leftcolumn dt {
+  clear: none;
+  float: none;
+  width: auto;
+}
+#leftcolumn dd {
+  margin-left: 20px;
+}
+em {
+  font-style: normal;
+  font-weight: 700;
+}
+input,
+textarea {
+  background: #fff;
+  border: 1px solid;
+  margin: 3px 0;
+  width: 250px;
+}
+textarea {
+  height: 50px;
+}
+#leftcolumn input,
+#leftcolumn textarea {
+  width: 100%;
+  height: 50px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+}
+.marker {
+  background: #fae2ee;
+  background: -webkit-linear-gradient(rgba(250, 226, 238, 0) 50%, #fae2ee 0%);
+  background: linear-gradient(rgba(250, 226, 238, 0) 50%, #fae2ee 0%);
+  margin: 0 3px;
+  padding: 1px 5px;
+}
+.dcline {
+  border-left: 5px solid #efb1d0;
+  margin: 5px 0;
+  padding: 3px;
+}
+.textbox {
+  border: 1px solid;
+  margin: 10px 0;
+  padding: 3px;
+  text-align: center;
+}
+.title {
+  color: #efb1d0;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 2em 0;
+  text-align: right;
+}
+.txt {
+  border-left: 1px dotted;
+  margin: 1em;
+  padding: 0 0 0 1em;
+}
+.frame {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px #ccc;
+  padding: 6px;
+}
+
+/* ===================================
+スマホ、タブレット用
+横幅600pxで切り替え
+=================================== */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1.4em;
+    line-height: 1.7;
+    padding: 0;
+  }
+  header {
+    text-align: left;
+  }
+  #rightcolumn-inner {
+    padding: 0 20px;
+  }
+  #leftcolumn-inner {
+    margin: 0;
+    padding: 10px;
+  }
+  #back {
+    display: inline-block;
+  }
+  html {
+    height: 100%;
+  }
+  header {
+    position: static;
+  }
+  #rightcolumn,
+  #leftcolumn {
+    float: none;
+  }
+  footer {
+    position: absolute;
+    min-width: 100%;
+  }
+  h1:not(.index) {
+    font-size: 1.4em;
+    line-height: 1;
+    min-height: 40px;
+    margin-right: 85px;
+  } /* メニューを開く+前に戻るボタン分 */
+  dt {
+    float: none;
+    clear: none;
+  }
+  dd {
+    margin-left: 2em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  } /* 画像の縮小表示 */
+
+  /* ===================================
+スマホ、タブレット用メニュー
+=================================== */
+
+  /*  スライド
+------------------------------ */
+  #leftcolumn {
+    background: rgba(255, 255, 255, 0.9); /* 背景色 */
+    display: none;
+    padding: 60px 20px 20px; /* ボタン分上を空ける */
+    position: fixed;
+    line-height: 2;
+    height: 100%;
+    width: 300px;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 1000;
+  }
+  #side-bg {
+    background: rgba(51, 51, 51, 0.5); /* 周りの背景色 */
+  }
+  /*  メニュー
+------------------------------ */
+  #menu {
+    background: none;
+  }
+  nav li {
+    margin-top: 5px;
+  }
+  nav li a,
+  nav li span {
+    background: #efb1d0;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .sub-menu li a {
+    background: #a08390;
+  }
+  /* サブメニューを一列にするなら削除 */
+  .sub-menu li {
+    display: inline-block;
+    width: 50%;
+  }
+  /*  メニューを開くボタン
+------------------------------ */
+  #open {
+    background: #efb1d0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+    position: absolute;
+    height: 40px;
+    width: 40px; /* 大きさ */
+    top: 10px;
+    right: 20px; /* 位置 */
+    z-index: 1001;
+  }
+  #leftcolumn-inner {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #side-bg {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+  }
+  #open.buttonclose {
+    position: fixed;
+  }
+  #open-icon,
+  #open-icon:before,
+  #open-icon:after {
+    background: #fff;
+  } /* 線の色 */
+  #open-icon {
+    display: block;
+    margin: -1px 0 0 -10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 20px;
+  }
+  #open-icon:before,
+  #open-icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 20px;
+    transition: 0.3s;
+  }
+  #open-icon:before {
+    margin-top: -8px;
+  }
+  #open-icon:after {
+    margin-top: 6px;
+  }
+  #open .close {
+    background: transparent;
+  }
+  #open .close:before,
+  #open .close:after {
+    margin-top: 0;
+  }
+  #open .close:before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  #open .close:after {
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+}

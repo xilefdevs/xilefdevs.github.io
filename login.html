@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyles.css" />
+  </head>
+
+  <body>
+    <script>
+      NekoType = "moka";
+    </script>
+    <h1 id="nl">
+      <script src="https://webneko.net/n20171213.js"></script>
+      <a href="https://webneko.net">Neko</a>
+    </h1>
+    <div class="wrapper">
+      <img
+        src="images\Monitor Spritefill.svg"
+        alt="Monitor"
+        style="width: 60%"
+      />
+
+      <div class="centered">
+        <h1>Login</h1>
+        <script src="index.js"></script>
+
+        <label for="fname">
+          <img
+            class="fit-picture"
+            src="images/bubu phone.jpg"
+            alt="bubu holding phone"
+          />
+        </label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter your name"
+          required
+        />
+
+        <br />
+
+        <label for="Password">
+          <img
+            class="fit-picture"
+            src="images/dudu phone.jpg"
+            alt="dudu holding phone"
+          />
+        </label>
+        <input
+          type="password"
+          id="Password"
+          name="Password"
+          placeholder="Password"
+        />
+
+        <br />
+
+        <button type="submit" onClick="auth()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

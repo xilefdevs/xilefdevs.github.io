@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@font-face {
+  font-family: "Cherish";
+  src: url("https://cinni.net/fonts/Cherish.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --accent-color: #cfa8c3;
+  --base-color: #ac7491;
+  --text-color: rgb(81, 60, 75);
+  --input-color: rgb(255, 248, 253);
+}
+
+.fit-picture {
+  width: 80px;
+}
+
+html {
+  font-family: "Cherish";
+  font-size: 20pt;
+  color: var(--text-color);
+  text-align: center;
+}
+
+h1 {
+  color: var(--base-color);
+  font-size: 80px;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(images/Post/Assets/Backgound/Background_Green.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

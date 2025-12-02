@@ -1,0 +1,40 @@
+body {
+  background-image: url(images/vintagefloralbackground.jpg);
+  background-size: cover;
+}
+#container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#content {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+  max-width: 90%;
+  box-sizing: border-box;
+  line-height: 1.8;
+  font-family: "Homemade Apple", cursive;
+  font-size: 1rem;
+}
+
+/* responsive tweak: make container full width on small screens */
+@media (max-width: 640px) {
+  #container {
+    width: 94%;
+  }
+  #content {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}

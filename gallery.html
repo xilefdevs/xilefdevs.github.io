@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- ▼全体の囲み▼ -->
+    <div id="wrapper">
+      <!-- メニューを開くボタン&前に戻るボタン -->
+      <div id="open"><span id="open-icon"></span></div>
+      <div id="back"><a href="javascript:history.back();"></a></div>
+
+      <!-- ▼ヘッダ▼ -->
+      <header>
+        <h1><a href="mainpage.html">Marisol's Site</a></h1>
+      </header>
+      <!-- ▲ヘッダ▲ -->
+      <script>
+        NekoType = "black";
+      </script>
+      <h1 id="nl">
+        <script src="https://webneko.net/n20171213.js"></script>
+        <a href="https://webneko.net">Neko</a>
+      </h1>
+      <!-- ▼メイン▼ -->
+      <div id="contents" class="cf">
+        <!-- ▼右側▼ -->
+        <div id="rightcolumn">
+          <div id="rightcolumn-inner">
+            <article>
+              <!-- ここから文字 -->
+              <h2><span>Update 1 Oct. 9th </span></h2>
+              <video width="500" height="300" controls>
+                <source src="videos\Update1.mp4" type="video/mp4" />
+              </video>
+
+              <h2><span>Update 2 Nov. 11th </span></h2>
+              <a href="url">Link to video because the file is too big :3</a>
+
+              <h2><span>Bunny Picart :3</span></h2>
+              <img src="images\Bunny picart.png" alt="Bunny Picart" />
+
+              <!-- ここまで文字 -->
+            </article>
+          </div>
+        </div>
+        <!-- ▲右側▲ -->
+
+        <!-- ▼左側▼ -->
+        <div id="side-bg"></div>
+        <div id="leftcolumn">
+          <div id="leftcolumn-inner">
+            <!-- ▼メニュー▼ -->
+            <div id="menu">
+              <nav>
+                <ul>
+                  <li><a href="mainpage.html">Home</a></li>
+                  <li><a href="login.html">Back to Login</a></li>
+                  <li><a href="ourtime.html">Our Time</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li>
+                    <span>Note Entries</span>
+                    <ul class="sub-menu">
+                      <li><a href="entry1.html">Divine Reaction</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- <aside>
+              <br /><br />
+              <a href="#">link</a><br />
+              <a href="#">link</a><br />
+              <a href="#">link</a><br />
+            </aside> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" id="pagetop"><span class="arrow"></span></a>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.height.js"></script>
+    <script src="js/jquery.scroll.js"></script>
+    <script src="js/jquery.toggle.js"></script>
+  </body>
+</html>
