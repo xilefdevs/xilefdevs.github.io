@@ -1,6 +1,7 @@
 body {
   background-image: url(images/vintagefloralbackground.jpg);
   background-size: cover;
+  cursor: url("image/Normal Select.cur"), default;
 }
 #container {
   position: relative;

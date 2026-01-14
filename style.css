@@ -41,6 +41,11 @@ section {
   background: transparent;
   box-sizing: border-box;
 }
+html,
+body {
+  cursor: url("image/Normal Select.cur"), default;
+  /* just change the cursor.ico path to your location */
+}
 article,
 aside,
 footer,
