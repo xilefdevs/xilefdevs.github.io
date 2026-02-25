@@ -68,6 +68,12 @@ select {
   vertical-align: middle;
   box-sizing: border-box;
 }
+
+dl {
+  overflow-y: scroll;
+  height: 200px;
+}
+
 a {
   margin: 0;
   padding: 0;
@@ -115,9 +121,10 @@ body {
   background: #fff;
   color: #cb87a9;
   font-size: 1.7em;
-  font-family: "heartfont", "Dosis", "Segoe UI", "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック体", YuGothic, "Hiragino Kaku Gothic ProN",
-    "メイリオ", Meiryo, sans-serif;
+  font-family:
+    "heartfont", "Dosis", "Segoe UI", "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック体", YuGothic, "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+    sans-serif;
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
@@ -205,8 +212,15 @@ footer {
 }
 header,
 footer {
-  text-shadow: 1px 0 0 #201414, 1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff,
-    -1px 0 0 #fff, -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff;
+  text-shadow:
+    1px 0 0 #201414,
+    1px 1px 0 #fff,
+    0 1px 0 #fff,
+    -1px 1px 0 #fff,
+    -1px 0 0 #fff,
+    -1px -1px 0 #fff,
+    0 -1px 0 #fff,
+    1px -1px 0 #fff;
 }
 /*  index
 ------------------------------ */
